@@ -65,3 +65,13 @@ guests.insert(1,'hamas')
 guests.insert(4,'hezbollah')
 guests.append('isi')
 guestss()
+
+def remove_guests():
+    print(guests)
+    while len(guests) > 2:
+     removed_guest = guests.pop()   # removes the last guest
+     print(f"Sorry {removed_guest}, we can’t invite you to dinner.")
+    for guest in guests:
+        print(f"Hey {guest}, you’re still invited to dinner!")
+
+remove_guests()
