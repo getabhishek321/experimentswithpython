@@ -1,43 +1,43 @@
-# ///                         
+///                         
 
-# bicycles=['Trek','Cannondale','Redline','Specialized']
-# print(bicycles)
+bicycles=['Trek','Cannondale','Redline','Specialized']
+print(bicycles)
 
-# # Accessing elements
-# print(bicycles[0])  # First element
-# print(bicycles[1])  # Second element
-# print(bicycles[3])  # Fourth element
-# print(bicycles[-1]) # Last element
+# Accessing elements
+print(bicycles[0])  # First element
+print(bicycles[1])  # Second element
+print(bicycles[3])  # Fourth element
+print(bicycles[-1]) # Last element
 
-# # Modifying elements
-# bicycles[0]='BMW'
-# print(bicycles)
+# Modifying elements
+bicycles[0]='BMW'
+print(bicycles)
 
-# # Adding elements
-# bicycles.append('Honda')
-# print(bicycles)
+# Adding elements
+bicycles.append('Honda')
+print(bicycles)
 
-# # Inserting elements
-# bicycles.insert(0,'Audi')
-# print(bicycles)
+# Inserting elements
+bicycles.insert(0,'Audi')
+print(bicycles)
 
-# # Removing elements
-# del bicycles[0]
-# print(bicycles)
+# Removing elements
+del bicycles[0]
+print(bicycles)
 
-# # Using pop() to remove the last element
-# popped_bicycle=bicycles.pop()
-# print(bicycles)
-# print(popped_bicycle)
+# Using pop() to remove the last element
+popped_bicycle=bicycles.pop()
+print(bicycles)
+print(popped_bicycle)
 
-# # adding message with the popped element
-# message="My last bicycle was a " + popped_bicycle.title() + "."
-# print(message)
+# adding message with the popped element
+message="My last bicycle was a " + popped_bicycle.title() + "."
+print(message)
 
-# message1="My first bicycle was a " + bicycles[0].title() + "."
-# print(message1)
+message1="My first bicycle was a " + bicycles[0].title() + "."
+print(message1)
 
-# project with lists, making a guest book
+project with lists, making a guest book
 
 guests =["hitler", "osama", "ghajini", "nazis", "white supremacists", "isis"]
 def guestss():
