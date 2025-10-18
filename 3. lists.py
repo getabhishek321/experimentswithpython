@@ -1,4 +1,4 @@
-#                        
+# ///                         
 
 # bicycles=['Trek','Cannondale','Redline','Specialized']
 # print(bicycles)
@@ -75,3 +75,6 @@ def remove_guests():
         print(f"Hey {guest}, you’re still invited to dinner!")
 
 remove_guests()
+
+del guests[:]
+print(guests)
