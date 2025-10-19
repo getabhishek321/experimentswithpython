@@ -68,7 +68,7 @@ guestss()
 
 def remove_guests():
     print(guests)
-    while len(guests) > 2:
+    while len(guests) > 2: #we are using while here to pop every single one of them till we are left with only 2 guests.
      removed_guest = guests.pop()   # removes the last guest
      print(f"Sorry {removed_guest}, we can’t invite you to dinner.")
     for guest in guests:
