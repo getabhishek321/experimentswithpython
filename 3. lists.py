@@ -1,80 +1,92 @@
-///                         
+                         
 
-bicycles=['Trek','Cannondale','Redline','Specialized']
-print(bicycles)
+# bicycles=['Trek','Cannondale','Redline','Specialized']
+# print(bicycles)
 
-# Accessing elements
-print(bicycles[0])  # First element
-print(bicycles[1])  # Second element
-print(bicycles[3])  # Fourth element
-print(bicycles[-1]) # Last element
+# # Accessing elements
+# print(bicycles[0])  # First element
+# print(bicycles[1])  # Second element
+# print(bicycles[3])  # Fourth element
+# print(bicycles[-1]) # Last element
 
-# Modifying elements
-bicycles[0]='BMW'
-print(bicycles)
+# # Modifying elements
+# bicycles[0]='BMW'
+# print(bicycles)
 
-# Adding elements
-bicycles.append('Honda')
-print(bicycles)
+# # Adding elements
+# bicycles.append('Honda')
+# print(bicycles)
 
-# Inserting elements
-bicycles.insert(0,'Audi')
-print(bicycles)
+# # Inserting elements
+# bicycles.insert(0,'Audi')
+# print(bicycles)
 
-# Removing elements
-del bicycles[0]
-print(bicycles)
+# # Removing elements
+# del bicycles[0]
+# print(bicycles)
 
-# Using pop() to remove the last element
-popped_bicycle=bicycles.pop()
-print(bicycles)
-print(popped_bicycle)
+# # Using pop() to remove the last element
+# popped_bicycle=bicycles.pop()
+# print(bicycles)
+# print(popped_bicycle)
 
-# adding message with the popped element
-message="My last bicycle was a " + popped_bicycle.title() + "."
-print(message)
+# # adding message with the popped element
+# message="My last bicycle was a " + popped_bicycle.title() + "."
+# print(message)
 
-message1="My first bicycle was a " + bicycles[0].title() + "."
-print(message1)
+# message1="My first bicycle was a " + bicycles[0].title() + "."
+# print(message1)
 
-#project with lists, making a guest book
+# #project with lists, making a guest book
 
-guests =["hitler", "osama", "ghajini", "nazis", "white supremacists", "isis"]
-def guestss():
-    for i in guests:
-        message=f'hey {i},you are invited'
-        print(message)
-        print("this is print from function")
+# guests =["hitler", "osama", "ghajini", "nazis", "white supremacists", "isis"]
+# def guestss():
+#     for i in guests:
+#         message=f'hey {i},you are invited'
+#         print(message)
+#         print("this is print from function")
 
 
-# we just heard isis cannot join us for technical reasons
+# # we just heard isis cannot join us for technical reasons
 
-declined_invitation=guests.remove('isis')
-print (guests)
-print("this is print from declined")
-guestss()
+# declined_invitation=guests.remove('isis')
+# print (guests)
+# print("this is print from declined")
+# guestss()
 
-#isis says we can invite alqayda instead
+# #isis says we can invite alqayda instead
 
-guests.append('alqayda')
-guestss()
+# guests.append('alqayda')
+# guestss()
 
-#suddenly lots of people are calling us, its going to be a hit
+# #suddenly lots of people are calling us, its going to be a hit
 
-guests.insert(1,'hamas')
-guests.insert(4,'hezbollah')
-guests.append('isi')
-guestss()
+# guests.insert(1,'hamas')
+# guests.insert(4,'hezbollah')
+# guests.append('isi')
+# guestss()
 
-def remove_guests():
-    print(guests)
-    while len(guests) > 2: #we are using while here to pop every single one of them till we are left with only 2 guests.
-     removed_guest = guests.pop()   # removes the last guest
-     print(f"Sorry {removed_guest}, we can’t invite you to dinner.")
-    for guest in guests:
-        print(f"Hey {guest}, you’re still invited to dinner!")
+# def remove_guests():
+#     print(guests)
+#     while len(guests) > 2:
+#      removed_guest = guests.pop()   # removes the last guest
+#      print(f"Sorry {removed_guest}, we can’t invite you to dinner.")
+#     for guest in guests:
+#         print(f"Hey {guest}, you’re still invited to dinner!")
 
-remove_guests()
+# remove_guests()
 
-del guests[:]
-print(guests)
+# del guests[:]
+# print(guests)
+
+# .
+# .
+#2nd project with lists:
+
+pizzas=['cheese','macaroni','pineapple','double crust']
+print(pizzas)
+
+for pizza in pizzas:
+    print(f'i love {pizza.title()} so much')
+    print(f'how much does {pizza.title()} cost')
+print(f'wow they are so expensive')
