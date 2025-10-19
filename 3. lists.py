@@ -90,3 +90,33 @@ for pizza in pizzas:
     print(f'i love {pizza.title()} so much')
     print(f'how much does {pizza.title()} cost')
 print(f'wow they are so expensive')
+
+
+for numbers in range(1,5):
+    print(numbers)
+
+numbers=list(range(1,5))
+print(numbers)
+
+print(numbers[0])
+
+squares=[]
+
+for numbers in range(1,11):
+    square=numbers**2
+    squares.append(square)
+print(squares)
+
+print(min(squares))
+print(max(squares))
+print(sum(squares))
+
+for even in range(2,100,2):
+    print(even)
+
+even=list(range(2,100,2))
+print(even)
+
+
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[0:3])
