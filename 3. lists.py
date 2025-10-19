@@ -37,7 +37,7 @@ print(message)
 message1="My first bicycle was a " + bicycles[0].title() + "."
 print(message1)
 
-project with lists, making a guest book
+#project with lists, making a guest book
 
 guests =["hitler", "osama", "ghajini", "nazis", "white supremacists", "isis"]
 def guestss():
