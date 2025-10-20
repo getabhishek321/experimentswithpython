@@ -120,3 +120,15 @@ print(even)
 
 players = ['charles', 'martina', 'michael', 'florence', 'eli']
 print(players[0:3])
+print(players[-3:])
+print(players[1:])
+print(players[2:4])
+
+#players[start:end:step]
+#step/skip=2  skips one element each time
+
+print(players[0:5:2])
+
+#If you want to skip every other element in the whole list, just do:
+print(players[::2])
+
