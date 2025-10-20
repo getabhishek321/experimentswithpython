@@ -132,3 +132,54 @@ print(players[0:5:2])
 #If you want to skip every other element in the whole list, just do:
 print(players[::2])
 
+#looping through the list
+for i in players [0:3]:
+    print(f'these are my first 3 players {i}')
+
+#concept of copying lists
+
+players=['ana','lucas','job']
+villains=['kai','rabbit','longshadow']
+players=villains[:]
+print(players)
+players.append('sugar')
+print(players)
+print(villains)
+
+
+#trying deep copy and limitations
+
+
+players=[['ana','lucas','job'],['1','2']]
+copied_players=players.copy()
+print(copied_players)
+
+#so this right here is an example of shallow copy
+#shallow copy essentially means that the list although would print out to be same
+#however they are not independent, and one change in 1 list will do a similar change in copied list as well.
+players[0].append('tony')
+print(players)
+print(copied_players)
+
+
+
+#however if we use the slicing method to copy
+print('using slicing method to copy')
+players=copied_players[:]
+print(players)
+print(copied_players)
+players[0].append('new')
+print(players)
+print(copied_players) #so i tried the earlier slicing method to copy, but this time change 
+#to 1 list is doing a change to both lists, so it basically means that nested lists 
+#can only be copied in true sense using the deepcopy method?
+
+
+#using deepcopy
+
+print('deepcopy starts here')
+import copy
+copied_players=copy.deepcopy(players)
+players[0].append('deep')
+print(players)
+print(copied_players)
