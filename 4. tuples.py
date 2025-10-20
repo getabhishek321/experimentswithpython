@@ -17,3 +17,19 @@ for dimension in dimensions:
 # dimensions.append('audi')
 # print(dimensions)
 
+#this would make a tuple and give an output of (3,)
+tuple1=(3,)
+print(tuple1)
+
+#Writing over a Tuple, this works because reassigning variable is fine
+
+print("original tuple")
+dimension=(100,30)
+for d in dimension:
+    print(d)
+
+print("modified tuple")
+dimension=("audi","bmw")
+for e in dimension:
+    print(e)
+
