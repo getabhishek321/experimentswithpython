@@ -10,3 +10,6 @@ print(alien['point'])
 shot_alien=alien['color']
 earned_point=alien['point']
 print(f'you shot down {shot_alien} alien you earned {earned_point} points')
+alien['weapon']='gun'
+alien['celebration']='dance'
+print(alien)
