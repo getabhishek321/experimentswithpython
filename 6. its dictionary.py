@@ -101,8 +101,19 @@ new.update({'abc':'def','ghi':'jkl'})
 
 #using the for loop together for all updates
 for a,b in new.items():
+    if a=='india':
+        print("india is beautiful")
+    elif a=='nepal':
+        print("nepal is good")
+    elif a=='usa':
+        print('usa is doland')
     print(f"so the country {a}, has capital {b}")
-
+    print(a,b)
+name=new.keys()
+cap=new.values()
+print(name)
+print(cap)
+print (sorted(new.keys()))
 
 
         
