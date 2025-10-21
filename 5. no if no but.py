@@ -68,3 +68,16 @@ elif b=='':
         print("you sure you want plain pizza?")
 else:
         print(f"sorry we don't have {b} currently ")
+
+#using multiple lists
+
+request=['lehsun','naan','macaroni']
+available=['macaroni','cheese','pepper']
+if request in available:
+      print("yes order is deliverable")
+else:
+      print("some items aren't available")
+
+
+
+    
