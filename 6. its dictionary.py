@@ -47,3 +47,7 @@ point_value = alien.get('points', 'No point value assigned.')
 weapon_value = alien.get('weapon', 'No weapon assigned.') #we cannot assign multiple defaults in single get
 print(point_value)
 print(weapon_value)
+
+#looping through the dictionary using items function:
+for a,b in alien.items():
+    print(f"did you see that alien it had {a} {b}")
