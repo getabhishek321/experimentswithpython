@@ -59,6 +59,18 @@ guys={
     'cal':'java',
     'sofi':'python'
 }
-for a,b in guys.items():
-    print(f"so the guys name is {a} and he codes in {b}, how difficult is that\n")
-    print(f"so if i had to just print values i'd just call {b}\n")
+
+bros={'john','sofi'}
+for names,languages in guys.items():
+    print(f"so the guys name is {names} and he codes in {languages}, how difficult is that")
+   # print(f"so if i had to just print values i'd just call {languages}\n")
+
+    if names in bros:
+        print(f"my man {names} loves {languages}")
+
+#we are using keys method here, please note we are doing this outside loop so it doesnt print same message again
+#we have done this with dictionary 'guys' itll work directly with dict and not with names variable of for loop.
+if 'erin' not in guys.keys():
+        print("erin please take the poll")
+        
+
