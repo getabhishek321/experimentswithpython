@@ -60,4 +60,5 @@ guys={
     'sofi':'python'
 }
 for a,b in guys.items():
-    print(f"so the guys name is {a} and he codes in {b}, how difficult is that")
+    print(f"so the guys name is {a} and he codes in {b}, how difficult is that\n")
+    print(f"so if i had to just print values i'd just call {b}\n")
