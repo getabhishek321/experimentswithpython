@@ -81,13 +81,28 @@ guys={
 # #lets use and print the values sorted
 
 
-for names in sorted(guys.values()):
-     if names=='python':
-          print(names,"nah thats not so tough")
-     else:
-          print(names,"thats a tough language")
+#going through values, making a special adjustment just for python.
+
+# for names in sorted(guys.values()):
+#      if names=='python':
+#           print(names,"nah thats not so tough")
+#      else:
+#           print(names,"thats a tough language")
      
-     
+
+#so we are making a new dictionary
+
+new={'india':'delhi','usa':'washington','nepal':'kathmandu'}
+
+#adding new key value pairs using 2 different methods
+
+new['japan'] ={'tokyo'}
+new.update({'abc':'def','ghi':'jkl'})
+
+#using the for loop together for all updates
+for a,b in new.items():
+    print(f"so the country {a}, has capital {b}")
+
 
 
         
