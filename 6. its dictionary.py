@@ -51,3 +51,13 @@ print(weapon_value)
 #looping through the dictionary using items function:
 for a,b in alien.items():
     print(f"did you see that alien it had {a} {b}")
+
+
+guys={
+    'john':'python',
+    'dow':'c++',
+    'cal':'java',
+    'sofi':'python'
+}
+for a,b in guys.items():
+    print(f"so the guys name is {a} and he codes in {b}, how difficult is that")
