@@ -48,36 +48,57 @@ else:
         print(f"bro did you just killed cap, you earned 500 points for that")
 
 
-#if else list project to get best pizza
+# #if else list project to get best pizza
 
-shop=['macaroni','cheese','pepper','bell pepper','capsicum','pineapple']
-b=input("tell me the topping you want: ")
-if b=='macaroni':
-        print(f"great choice, adding {b}, your total would be 50$")
-elif b=='cheese':
-        print(f"great choice, adding {b}, your total would be 20$")
-elif b=='pepper':
-        print(f"great choice, adding {b}, your total would be 10$")
-elif b=='bell pepper':
-        print(f"great choice, adding {b}, your total would be 15$")
-elif b=='capsicum':
-        print(f"great choice, adding {b}, your total would be 25$")
-elif b=='pineapple':
-        print(f"great choice, adding {b}, your total would be 5$")
-elif b=='':
-        print("you sure you want plain pizza?")
-else:
-        print(f"sorry we don't have {b} currently ")
+# shop=['macaroni','cheese','pepper','bell pepper','capsicum','pineapple']
+# b=input("tell me the topping you want: ")
+# if b=='macaroni':
+#         print(f"great choice, adding {b}, your total would be 50$")
+# elif b=='cheese':
+#         print(f"great choice, adding {b}, your total would be 20$")
+# elif b=='pepper':
+#         print(f"great choice, adding {b}, your total would be 10$")
+# elif b=='bell pepper':
+#         print(f"great choice, adding {b}, your total would be 15$")
+# elif b=='capsicum':
+#         print(f"great choice, adding {b}, your total would be 25$")
+# elif b=='pineapple':
+#         print(f"great choice, adding {b}, your total would be 5$")
+# elif b=='':
+#         print("you sure you want plain pizza?")
+# else:
+#         print(f"sorry we don't have {b} currently ")
 
-#using multiple lists
+# #using multiple lists
 
-request=['lehsun','naan','macaroni']
-available=['macaroni','cheese','pepper']
-if request in available:
-      print("yes order is deliverable")
-else:
-      print("some items aren't available")
+# request=['lehsun','naan','macaroni']
+# available=['macaroni','cheese','pepper']
+# if request in available:
+#       print("yes order is deliverable")
+# else:
+#       print("some items aren't available")
 
+# #using multiple lists 2
 
+# available=['lehsun','naan','macaroni']
+# print("'lehsun','naan','macaroni' are available for toppings")
+# b=input("what topping do you want sir: ")
+# for a in available:
+#       if b==a:
+#             print("yes this is doable")
+#             break;
+# else:
+#     print("this isnt available")
+      
 
     
+
+#ultimate project begins here
+# mini interactive pizza-order program that:
+
+# Takes multiple toppings
+
+# Calculates the total price dynamically
+
+# Shows a fun receipt at the end
+
