@@ -1,0 +1,118 @@
+
+
+## Project Overview
+
+You’ll build a small, interactive Python program where:
+
+1. The user can **see available toppings** (with prices).
+2. They can **enter one or multiple toppings** (comma-separated).
+3. The program will:
+
+   * Check which toppings are **available** and which are not.
+   * Calculate the **total cost** for the valid ones.
+   * Display a **summary or receipt**.
+
+---
+
+## Step-by-Step Plan
+
+### **Step 1 — Define your data**
+
+*Hint:*
+Instead of having two lists, use a **dictionary** to map toppings to prices.
+
+Example structure (don’t copy-paste yet — just understand):
+
+```python
+toppings = {'cheese': 20, 'pepper': 10, ...}
+```
+
+**Goal:** Be able to access the price of any topping easily using `toppings[name]`.
+
+---
+
+### **Step 2 — Show available toppings**
+
+*Hint:*
+Use a simple `for` loop to print all toppings with prices, one per line.
+
+**Goal:** Output like
+
+```
+Available toppings:
+cheese - $20
+pepper - $10
+...
+```
+
+---
+
+### **Step 3 — Get user input**
+
+*Hint:*
+Use `input()` to get multiple toppings from the user, separated by commas.
+Then split that string using `.split(',')`.
+
+**Goal:**
+User types:
+
+```
+cheese, pepper, pineapple
+```
+
+And your program turns that into a **list** like:
+
+```python
+['cheese', 'pepper', 'pineapple']
+```
+
+*Bonus hint:* Use `.strip()` to remove spaces around each item after splitting.
+
+---
+
+### **Step 4 — Validate and calculate**
+
+*Hint:*
+Iterate through each user topping:
+
+* If it’s in your toppings dictionary → add its price to a running total.
+* Else → inform the user that it’s not available.
+
+**Goal:**
+You’ll have:
+
+* A variable like `total = 0`
+* Add prices using `total += toppings[item]` for available ones.
+
+---
+
+### **Step 5 — Print the final receipt**
+
+*Hint:*
+Once the loop ends, print:
+
+* What toppings were added
+* The total cost
+* A fun thank-you message 
+
+Example (goal, not code):
+
+```
+Your pizza will have cheese, pepper
+Total cost: $30
+Thanks for ordering from Python Pizza!
+```
+
+---
+
+##  Bonus Challenge (Optional)
+
+Once your basic version works, try one of these:
+
+* Allow the user to **add extra cheese or double toppings** (multiplying cost).
+* Offer a **discount** if the total crosses a certain amount.
+* Add a **“plain pizza”** option if no input is given.
+
+---
+
+Would you like me to give you a **hint map** (small roadmap showing which Python features you’ll need at each step — like `.split()`, `for`, `if`, `dict.get()`, etc.) to make implementation smoother?
