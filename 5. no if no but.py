@@ -46,3 +46,25 @@ elif alien=='loki':
         print(f"did you just killed loki, you earned 100 points for that")
 else:
         print(f"bro did you just killed cap, you earned 500 points for that")
+
+
+#if else list project to get best pizza
+
+shop=['macaroni','cheese','pepper','bell pepper','capsicum','pineapple']
+b=input("tell me the topping you want: ")
+if b=='macaroni':
+        print(f"great choice, adding {b}, your total would be 50$")
+elif b=='cheese':
+        print(f"great choice, adding {b}, your total would be 20$")
+elif b=='pepper':
+        print(f"great choice, adding {b}, your total would be 10$")
+elif b=='bell pepper':
+        print(f"great choice, adding {b}, your total would be 15$")
+elif b=='capsicum':
+        print(f"great choice, adding {b}, your total would be 25$")
+elif b=='pineapple':
+        print(f"great choice, adding {b}, your total would be 5$")
+elif b=='':
+        print("you sure you want plain pizza?")
+else:
+        print(f"sorry we don't have {b} currently ")
