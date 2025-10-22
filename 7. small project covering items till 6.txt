@@ -114,5 +114,3 @@ Once your basic version works, try one of these:
 * Add a **“plain pizza”** option if no input is given.
 
 ---
-
-Would you like me to give you a **hint map** (small roadmap showing which Python features you’ll need at each step — like `.split()`, `for`, `if`, `dict.get()`, etc.) to make implementation smoother?
