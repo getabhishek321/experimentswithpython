@@ -70,3 +70,6 @@ for a in choice_list:
 grand=total1+total
 print(f"\nYour total bill is ₹{grand}")
 print(f"{name}, thank you for eating with us")
+
+#darft 2 turned out better than expectation, its already a functioning project
+
