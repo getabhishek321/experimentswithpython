@@ -112,5 +112,6 @@ Once your basic version works, try one of these:
 * Allow the user to **add extra cheese or double toppings** (multiplying cost).
 * Offer a **discount** if the total crosses a certain amount.
 * Add a **“plain pizza”** option if no input is given.
+* Ask them if they even need a topping
 
 ---
