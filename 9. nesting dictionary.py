@@ -113,3 +113,37 @@ for country, states in countr.items():
     print(f"\nCountry: {country.title()}")
     for info in states:
         print(f"  State: {info['state'].title()} | CM: {info['cm'].title()}")
+
+
+# mini practice
+
+employee = {
+    'name': 'John',
+    'details': {
+        'role': 'Developer',
+        'city': 'Delhi'
+    }
+}
+
+print(employee.get('name', 'No name'))
+print(employee.get('details', {}).get('role', 'No role'))
+print(employee.get('details', {}).get('salary', 'No salary info'))
+
+# mini practice to use get() method
+
+
+users={
+    "asingh":{
+        "first":"abhi", "last":"singh","location":"ind"
+    },
+    "bsingh":{
+        "first":"bikas","last":"singh","location":"us"
+    }
+}
+
+for username,info in users.items():
+     print(f"username: {username}")
+     print(f"first name: {info.get('first','n/a')}")
+     print(f"last name: {info.get('last','n/a')}")
+     print(f"location: {info.get('location','n/a')}")
+    
