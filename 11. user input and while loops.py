@@ -53,48 +53,102 @@
 
 # # movie tickets
 
-print("welcome to age based movie theater")
-print("type done to quit: ")
+# print("welcome to age based movie theater")
+# print("type done to quit: ")
 
 
-while True:
-    a=input("enter your age: ")
+# while True:
+#     a=input("enter your age: ")
 
-    if a=='done':
-        break;
-    a=int(a)
-    if a<=3:
-        print("your ticket is free, type done to quit")
-    elif a>3 and a<=18:
-        print("it will cost you full cost of 500, type done to quit")
-    elif a>=18 and a<=50:
-        print("it will cost you 200, type done to quit")
-    elif a=="done": 
-        break;
+#     if a=='done':
+#         break;
+#     a=int(a)
+#     if a<=3:
+#         print("your ticket is free, type done to quit")
+#     elif a>3 and a<=18:
+#         print("it will cost you full cost of 500, type done to quit")
+#     elif a>=18 and a<=50:
+#         print("it will cost you 200, type done to quit")
+#     elif a=="done": 
+#         break;
 
-#cleaner version
+# #cleaner version
 
-print("Welcome to the age-based movie theater!")
-print("Type 'done' to quit.\n")
+# print("Welcome to the age-based movie theater!")
+# print("Type 'done' to quit.\n")
 
-while True:
-    a = input("Enter your age: ").strip().lower()
+# while True:
+#     a = input("Enter your age: ").strip().lower()
 
-    if a == 'done':
-        print("Thank you for visiting!")
-        break
+#     if a == 'done':
+#         print("Thank you for visiting!")
+#         break
 
-    if not a.isdigit():
-        print("Please enter a valid number or 'done' to quit.")
-        continue
+#     if not a.isdigit():
+#         print("Please enter a valid number or 'done' to quit.")
+#         continue
 
-    age = int(a)
+#     age = int(a)
 
-    if age <= 3:
-        print("Your ticket is free.")
-    elif 3 < age <= 18:
-        print("Your ticket will cost ₹500.")
-    elif 18 < age <= 50:
-        print("Your ticket will cost ₹200.")
-    else:
-        print("Your ticket will cost ₹300.")  # For seniors, optional
+#     if age <= 3:
+#         print("Your ticket is free.")
+#     elif 3 < age <= 18:
+#         print("Your ticket will cost ₹500.")
+#     elif 18 < age <= 50:
+#         print("Your ticket will cost ₹200.")
+#     else:
+#         print("Your ticket will cost ₹300.")  # For seniors, optional
+
+# three exits
+
+# Use a conditional test in the while statement to stop the loop. 
+# • Use an active variable to control how long the loop runs. 
+# • Use a break statement to exit the loop when the user enters a 'quit' value
+
+# i=1
+
+# while i<=5:
+#     print("going good")
+#     i=i+1
+#     if i==5:
+#         a=input(f"do you want to continue: press 'y' or 'n' ")
+#         if a=='y':
+#             continue
+#         elif a=='n':
+#             break;
+
+# more effective
+
+# print("Loop exercise demo")
+
+# active = True     # active variable to control the loop
+# i = 1             # counter, optional
+
+# while active:     # conditional test
+#     print(f"Round {i}: going good")
+
+#     a = input("Type 'y' to keep going, 'n' to stop, or 'quit' to exit immediately: ").strip().lower()
+
+#     if a == 'quit':
+#         print("Quitting loop via break…")
+#         break                        # requirement 3
+#     elif a == 'n':
+#         active = False               # turns off the loop
+#     elif a == 'y':
+#         i += 1                       # continue to next round
+#         continue
+#     else:
+#         print("Invalid input, please type y / n / quit.")
+
+# print("Loop finished.")
+
+# using while loop with two lists
+
+unconfirmed_users=['a','b','c','d']
+confirmed_users=[]
+
+while unconfirmed_users!=[]: # while unconfirmed_users: this would also mean the list is not empty
+    print(f"checking current user: {unconfirmed_users[-1]}")
+    check=unconfirmed_users.pop()
+    confirmed_users.append(check)
+print(f"so these are confirmed users: {confirmed_users}")
