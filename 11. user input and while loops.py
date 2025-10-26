@@ -165,7 +165,43 @@ people=['dog', 'cat', 'dogesh', 'catesh', 'horsy', 'cati kumar']
 
     #so this didnt work as expected, its removing all items till it encounters cat
 
-while 'cat' in people:
-    people.remove('cat')
+# while 'cat' in people:
+#     people.remove('cat')
 
+# print(people) # this worked as expected
+
+# how about we remove all occurences of cat in list, something sort of a wild card search
+
+# a= people.find('*cat*')
+# while a in people:
+#     b=people.remove({a})
+#     print (people) #this DOESN't WORK AT ALL find doesnt exist with lists.
+
+#achieving the desired output way 1
+
+people = ['dog', 'cat', 'dogesh', 'catesh', 'horsy', 'cati kumar']
+
+people = [p for p in people if 'cat' not in p]
+
+print(people)
+
+
+#achieving the desired output way 2, loop approach
+
+people = ['dog', 'cat', 'dogesh', 'catesh', 'horsy', 'cati kumar']
+
+i = 0
+while i < len(people):
+    if 'cat' in people[i]:
+        people.pop(i)       # remove the element at this index
+    else:
+        i += 1              # only move forward when not removing
+
+print(people)
+
+#achieving the desired output way 3, Using filter() (functional approach)
+
+people = ['dog', 'cat', 'dogesh', 'catesh', 'horsy', 'cati kumar']
+
+people = list(filter(lambda x: 'cat' not in x, people))
 print(people)
