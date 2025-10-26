@@ -144,11 +144,28 @@
 
 # using while loop with two lists
 
-unconfirmed_users=['a','b','c','d']
-confirmed_users=[]
+# unconfirmed_users=['a','b','c','d']
+# confirmed_users=[]
 
-while unconfirmed_users!=[]: # while unconfirmed_users: this would also mean the list is not empty
-    print(f"checking current user: {unconfirmed_users[-1]}")
-    check=unconfirmed_users.pop()
-    confirmed_users.append(check)
-print(f"so these are confirmed users: {confirmed_users}")
+# while unconfirmed_users!=[]: # while unconfirmed_users: this would also mean the list is not empty
+#     print(f"checking current user: {unconfirmed_users[-1]}")
+#     check=unconfirmed_users.pop()
+#     confirmed_users.append(check)
+# print(f"so these are confirmed users: {confirmed_users}")
+
+
+# removing specific items from a list
+
+people=['dog', 'cat', 'dogesh', 'catesh', 'horsy', 'cati kumar']
+
+# while 'cat' in people:
+#     people.pop()
+
+#     print(people)
+
+    #so this didnt work as expected, its removing all items till it encounters cat
+
+while 'cat' in people:
+    people.remove('cat')
+
+print(people)
