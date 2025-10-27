@@ -176,4 +176,53 @@ while True:
 
 print("\nAll users:", users)
 
+# Nested dictionary (one user → multiple fields)
+
+users = {}
+
+while True:
+    username = input("Enter a username (or 'done' to quit): ").strip()
+    if username.lower() == 'done':
+        break
+
+    age = input("Enter age: ").strip()
+    city = input("Enter city: ").strip()
+    hobby = input("Enter hobby: ").strip()
+
+    # store all user info in a nested dictionary
+    users[username] = {
+        'age': age,
+        'city': city,
+        'hobby': hobby
+    }
+
+print("\nFinal data:")
+for user, info in users.items():
+    print(f"{user.title()}: {info}")
+
+
+# Nested list inside dictionary (user with multiple hobbies)
+
+users = {}
+
+username = input("Enter your name: ")
+age = input("Enter your age: ")
+
+hobbies = []
+while True:
+    hobby = input("Enter a hobby (type 'ok' when done): ").strip()
+    if hobby.lower() == 'ok':
+        break
+    hobbies.append(hobby)
+
+users[username] = {
+    'age': age,
+    'hobbies': hobbies
+}
+
+print("\nUser details:")
+for name, info in users.items():
+    print(f"{name.title()} → Age: {info['age']}, Hobbies: {', '.join(info['hobbies'])}")
+
+
 
