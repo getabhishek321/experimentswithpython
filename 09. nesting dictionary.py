@@ -146,4 +146,34 @@ for username,info in users.items():
      print(f"first name: {info.get('first','n/a')}")
      print(f"last name: {info.get('last','n/a')}")
      print(f"location: {info.get('location','n/a')}")
-    
+
+
+# taking user input and filling up a dictionary step by step
+
+# 1. Simple Dictionary (single key-value)
+
+person = {}  # empty dictionary
+
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+
+person['name'] = name
+person['age'] = age
+
+print("Here’s your data:", person)
+
+# 2. Multiple entries (loop)
+
+users = {}
+
+while True:
+    username = input("Enter a username (or 'done' to quit): ").strip()
+    if username.lower() == 'done':
+        break
+
+    age = input(f"Enter {username}'s age: ").strip()
+    users[username] = age
+
+print("\nAll users:", users)
+
+
