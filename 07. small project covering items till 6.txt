@@ -1,5 +1,3 @@
-
-
 ## Project Overview
 
 You’ll build a small, interactive Python program where:
